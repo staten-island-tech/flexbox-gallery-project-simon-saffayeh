@@ -1,0 +1,53 @@
+body,
+html,
+* {
+    font-size: 10px;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+
+.card{
+    height: 50vh;
+    width: 27%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0;
+    box-shadow: 2px 2px 20px 5px;;
+}
+.card-title{
+    font-size: 2.2rem;
+    margin:0.5rem 0;
+    text-transform: uppercase;
+    font-family: 'Marcellus', serif;
+}
+.sub{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: -5px;
+}
+.title{
+    font-family: 'Marcellus', serif;
+    font-size: 5.2rem;
+    text-align: center;
+}
+.card-img{
+    width:100%;
+}
+
+.card-price{
+    font-size: 1.2rem;
+}
+.container{
+    display:flex;
+    width:80vw;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem auto;
+
+}
