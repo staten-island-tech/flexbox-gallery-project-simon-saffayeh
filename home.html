@@ -5,19 +5,74 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Marcellus&family=Poppins:wght@200&display=swap" rel="stylesheet">
-
-    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Marcellus&family=Open+Sans&family=Poppins:wght@200&family=Quicksand:wght@500&display=swap" rel="stylesheet">    <title>Document</title>
 </head>
 <body>
     <h1 class="title">Mountains</h1>
     <p class = "sub">The wonders of the world</p>
     <div class="container">
-    <div class="card">
+    <div onmouseover= "myMove('card1')" style = "top:0; left:0" id = "card1" class="card">
         <h3 class="card-title">Matterhorn</h3>
         <img src="img/1.jpg" class= "card-img" alt="">
-        <h4 class="card-price">test</h4>
+        <p class="card-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe assumenda accusantium, consectetur explicabo magni sequi laboriosam consequatur reprehenderit ipsam quod cum culpa rem debitis eius voluptatum nobis maiores architecto!</p>
     </div>
+
+    <div id = "card2" onmouseover= "myMove('card2')" style = "top:0; left:0" class="card">
+        <h3 class="card-title">Matterhorn</h3>
+        <img src="img/2.jpg" class= "card-img" alt="">
+        <p class="card-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe assumenda accusantium, consectetur explicabo magni sequi laboriosam consequatur reprehenderit ipsam quod cum culpa rem debitis eius voluptatum nobis maiores architecto!</p>
+    </div>
+    <div id="card3" onmouseover= "myMove('card3')" style = "top:0; left:0" class="card">
+        <h3 class="card-title">Matterhorn</h3>
+        <img src="img/3.jpg" class= "card-img" alt="">
+        <p class="card-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe assumenda accusantium, consectetur explicabo magni sequi laboriosam consequatur reprehenderit ipsam quod cum culpa rem debitis eius voluptatum nobis maiores architecto!</p>
+    </div>
+
+    
 </div>
+
+<script>
+var id = null;
+function myMove(elem1) {
+    elem = document.getElementById(elem1);
+
+
+    let isMouseHover = true
+elem.addEventListener("mouseleave", function (event) {
+  isMouseHover = false
+  console.log(isMouseHover)
+}, false);
+elem.addEventListener("mouseover", function (event) {
+  isMouseHover = true
+  console.log(isMouseHover)
+}, false);
+
+
+
+    current_top = elem.style.top
+    current_left = elem.style.left
+var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 10);
+  function frame() {
+    if (isMouseHover == false) {
+      clearInterval(id);
+    } else {
+        console.log(pos)
+      pos+= 1;
+
+      elem.style.top = parseInt(current_top) + pos + 'px';
+    //   elem.style.left = parseInt(current_left) + pos + 'px'; 
+    }
+  }
+}
+
+
+
+</script>
 </body>
 </html>

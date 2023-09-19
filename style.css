@@ -9,6 +9,7 @@ html,
 
 
 .card{
+    position:relative;
     height: 50vh;
     width: 27%;
     display:flex;
@@ -16,14 +17,15 @@ html,
     align-items: center;
     justify-content: space-around;
     margin: 1rem 0;
-    box-shadow: 2px 2px 20px 5px;;
+    transition-duration: 500ms;
+    background-color: rgb(245, 245, 245);
 }
+
 .card-title{
     font-size: 2.2rem;
     margin:0.5rem 0;
     text-transform: uppercase;
-    font-family: 'Marcellus', serif;
-}
+    font-family: 'Quicksand', sans-serif;}
 .sub{
     font-family: 'Poppins', sans-serif;
     font-size: 1.7rem;
@@ -39,10 +41,15 @@ html,
     width:100%;
 }
 
-.card-price{
+.card-p{
     font-size: 1.2rem;
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
 }
 .container{
+    position:absolute;
+    left: 0;
+    right: 0;
     display:flex;
     width:80vw;
     flex-wrap:wrap;
