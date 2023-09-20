@@ -19,6 +19,7 @@ html,
     margin: 1rem 0;
     transition-duration: 500ms;
     background-color: rgb(245, 245, 245);
+
 }
 
 .card-title{
@@ -38,9 +39,16 @@ html,
     text-align: center;
 }
 .card-img{
+    height:50%;
     width:100%;
+    object-fit: cover;
+    object-position: 50% top;
+    animation: mymove 1s 1;
 }
-
+@keyframes mymove {
+    from {height: 0%;}
+    to {height: 50%;}
+  }
 .card-p{
     font-size: 1.2rem;
     padding: 1rem;
@@ -48,13 +56,23 @@ html,
 }
 .container{
     position:absolute;
+    flex-flow: row wrap;
     left: 0;
     right: 0;
     display:flex;
     width:80vw;
-    flex-wrap:wrap;
     align-items: center;
     justify-content: space-around;
     margin: 1rem auto;
 
 }
+
+.surprise-img{
+    display:hidden
+}
+
+
+@keyframes surprise {
+    from {height: 0%;}
+    to {height: 50%;}
+  }
