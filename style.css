@@ -9,9 +9,8 @@ html,
 
 
 .card{
-    position:relative;
     height: 70vh;
-    width: 27%;
+    width: 29%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -55,12 +54,9 @@ html,
     font-family: 'Open Sans', sans-serif;
 }
 .container, #container2{
-    position:absolute;
     flex-flow: row wrap;
-    left: 0;
-    right: 0;
     display:flex;
-    width:80vw;
+    width:90vw;
     align-items: center;
     justify-content: space-around;
     margin: 1rem auto;
@@ -86,4 +82,37 @@ button{
 
 button:hover{
     cursor:pointer;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .card{
+        width:95%
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .card{
+        width:95%
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .card{
+        width:45%
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .card{
+        width:28%
+    }
+    .container{
+        width:80%;
+    }
 }

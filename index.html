@@ -15,40 +15,40 @@
     <h1 id = "title" class="title">Mountains</h1>
     <p id = "sub" class = "sub">The wonders of the world</p>
     <div id = "container" class="container">
-    <div onmouseover= "myMove('card1')" style = "top:50; left:0" id = "card1" class="card">
-        <h3 class="card-title">Matterhorn</h3>
-        <img id="img1"src="img/1.jpg" class= "card-img" alt="">
-        <p class="card-p">Standing as a symbol of the Swiss Alps, the Matterhorn
-           is a majestic peak that has captured the hearts of mountaineers and 
-           adventurers for generations. Its distinctive pyramid shape and challenging 
-           ascent make it a legendary destination for climbers seeking both beauty and a formidable challenge.</p>
-    </div>
+      <div id = "card1" class="card">
+          <h3 class="card-title">Matterhorn</h3>
+          <img id="img1"src="img/1.jpg" class= "card-img" alt="">
+          <p class="card-p">Standing as a symbol of the Swiss Alps, the Matterhorn
+            is a majestic peak that has captured the hearts of mountaineers and 
+            adventurers for generations. Its distinctive pyramid shape and challenging 
+            ascent make it a legendary destination for climbers seeking both beauty and a formidable challenge.</p>
+      </div>
 
-    <div id = "card2" onmouseover= "myMove('card2')" style = "top:50; left:0" class="card">
-        <h3 class="card-title">Everest</h3>
-        <img id="img2"src="img/2.jpg" class= "card-img" alt="">
-        <p class="card-p">Mount Everest, the highest point on Earth, needs no introduction.
-           It beckons intrepid explorers to test their limits and
-           conquer the world's tallest peak. As the ultimate mountaineering achievement, Everest's grandeur and 
-          awe-inspiring presence continue to inspire adventurers from across the globe.</p>
-    </div>
-    <div id="card3" onmouseover= "myMove('card3')" style = "top:50; left:0" class="card">
-        <h3 class="card-title">K2</h3>
-        <img id="img3"src="img/3.jpg" class= "card-img" alt="">
-        <p class="card-p">Known as the "Savage Mountain," K2 is renowned for its treacherous
-           terrain and perilous weather conditions. Scaling its slopes demands the utmost
-            determination and expertise. As the second-highest peak on the planet, K2
-           is an emblem of the relentless pursuit of conquering nature's most extreme challenges.</p>
-    </div>
+      <div id = "card2" class="card">
+          <h3 class="card-title">Everest</h3>
+          <img id="img2"src="img/2.jpg" class= "card-img" alt="">
+          <p class="card-p">Mount Everest, the highest point on Earth, needs no introduction.
+            It beckons intrepid explorers to test their limits and
+            conquer the world's tallest peak. As the ultimate mountaineering achievement, Everest's grandeur and 
+            awe-inspiring presence continue to inspire adventurers from across the globe.</p>
+      </div>
+      <div id="card3" class="card">
+          <h3 class="card-title">K2</h3>
+          <img id="img3"src="img/3.jpg" class= "card-img" alt="">
+          <p class="card-p">Known as the "Savage Mountain," K2 is renowned for its treacherous
+            terrain and perilous weather conditions. Scaling its slopes demands the utmost
+              determination and expertise. As the second-highest peak on the planet, K2
+            is an emblem of the relentless pursuit of conquering nature's most extreme challenges.</p>
+      </div>
 
 </div>
-<div id = "container2">
+<!-- <div id = "container2">
 <img style = "display:none; width:5%; height:5%;" id = "surprise-img" class = "surprise-img" src="img/WhalenMichael.jpg" alt="">
     <button id = "button1" onclick="surprise()" class="surpise">Click for a surprise</button>
     <button id = "button2" onclick="whalen()">Whalen Mode</button>
-</div>
+</div> -->
 <script>
-var id = null;
+/* var id = null;
 function myMove(elem1) {
     elem = document.getElementById(elem1);
 
@@ -81,7 +81,7 @@ var pos = 0;
     //   elem.style.left = parseInt(current_left) + pos + 'px'; 
     }
   }
-}
+} */
 function surprise(){
   size = 5;
   document.getElementById("surprise-img").style.display = "block";
