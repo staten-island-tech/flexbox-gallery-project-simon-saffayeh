@@ -20,7 +20,9 @@ html,
     background-color: rgb(245, 245, 245);
 
 }
-
+.card:hover{
+    filter:brightness(80%)
+}
 .card-title{
     font-size: 2.2rem;
     margin:0.5rem 0;
@@ -38,7 +40,7 @@ html,
     text-align: center;
 }
 .card-img{
-    height:50%;
+    height:100%;
     width:100%;
     object-fit: cover;
     object-position: 50% top;
