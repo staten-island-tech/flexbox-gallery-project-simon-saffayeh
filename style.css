@@ -21,8 +21,11 @@ html,
 
 }
 .card:hover{
-    filter:brightness(80%)
+    cursor:pointer;
+    scale: 103%; 
+    /* width:50%; */
 }
+
 .card-title{
     font-size: 2.2rem;
     margin:0.5rem 0;
@@ -55,6 +58,7 @@ html,
     padding: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
+
 .container, #container2{
     flex-flow: row wrap;
     display:flex;
@@ -130,4 +134,10 @@ button:hover{
     justify-content: space-around;
     margin: 1rem 0;
     transition-duration: 500ms;
+}
+
+.large{
+    width:50%;
+    object-position: 50%;
+
 }

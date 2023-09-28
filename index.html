@@ -15,7 +15,7 @@
     <h1 id = "title" class="title">Mountains</h1>
     <p id = "sub" class = "sub">The wonders of the world</p>
     <div id = "container" class="container">
-      <div id = "card1" class="card">
+      <div onclick ="expand(this)" id = "card1" class="card">
           <h3 class="card-title">Matterhorn</h3>
           <img id="img1"src="img/1.jpg" class= "card-img" alt="">
           <p class="card-p">Standing as a symbol of the Swiss Alps, the Matterhorn
@@ -24,7 +24,7 @@
             ascent make it a legendary destination for climbers seeking both beauty and a formidable challenge.</p>
       </div>
 
-      <div id = "card2" class="card">
+      <div onclick ="expand(this)" id = "card2" class="card">
           <h3 class="card-title">Everest</h3>
           <img id="img2"src="img/2.jpg" class= "card-img" alt="">
           <p class="card-p">Mount Everest, the highest point on Earth, needs no introduction.
@@ -32,7 +32,7 @@
             conquer the world's tallest peak. As the ultimate mountaineering achievement, Everest's grandeur and 
             awe-inspiring presence continue to inspire adventurers from across the globe.</p>
       </div>
-      <div id="card3" class="card">
+      <div onclick ="expand(this)" id="card3" class="card">
           <h3 class="card-title">K2</h3>
           <img id="img3"src="img/3.jpg" class= "card-img" alt="">
           <p class="card-p">Known as the "Savage Mountain," K2 is renowned for its treacherous
@@ -40,7 +40,7 @@
               determination and expertise. As the second-highest peak on the planet, K2
             is an emblem of the relentless pursuit of conquering nature's most extreme challenges.</p>
       </div>
-      <div id = "card1" class="card">
+      <div onclick ="expand(this)" id = "card1" class="card">
         <h3 class="card-title">Matterhorn</h3>
         <img id="img1"src="img/1.jpg" class= "card-img" alt="">
         <p class="card-p">Standing as a symbol of the Swiss Alps, the Matterhorn
@@ -49,7 +49,7 @@
           ascent make it a legendary destination for climbers seeking both beauty and a formidable challenge.</p>
     </div>
 
-    <div id = "card2" class="card">
+    <div onclick ="expand(this)" id = "card2" class="card">
         <h3 class="card-title">Everest</h3>
         <img id="img2"src="img/2.jpg" class= "card-img" alt="">
         <p class="card-p">Mount Everest, the highest point on Earth, needs no introduction.
@@ -57,7 +57,7 @@
           conquer the world's tallest peak. As the ultimate mountaineering achievement, Everest's grandeur and 
           awe-inspiring presence continue to inspire adventurers from across the globe.</p>
     </div>
-    <div id="card3" class="card">
+    <div onclick ="expand(this)" id="card3" class="card">
         <h3 class="card-title">K2</h3>
         <img id="img3"src="img/3.jpg" class= "card-img" alt="">
         <p class="card-p">Known as the "Savage Mountain," K2 is renowned for its treacherous
@@ -66,7 +66,7 @@
           is an emblem of the relentless pursuit of conquering nature's most extreme challenges.</p>
     </div>
 
-    <div id = "card1" class="card">
+    <div onclick ="expand(this)" id = "card1" class="card">
       <h3 class="card-title">Matterhorn</h3>
       <img id="img1"src="img/1.jpg" class= "card-img" alt="">
       <p class="card-p">Standing as a symbol of the Swiss Alps, the Matterhorn
@@ -75,7 +75,7 @@
         ascent make it a legendary destination for climbers seeking both beauty and a formidable challenge.</p>
   </div>
 
-  <div id = "card2" class="card">
+  <div onclick ="expand(this)" id = "card2" class="card">
       <h3 class="card-title">Everest</h3>
       <img id="img2"src="img/2.jpg" class= "card-img" alt="">
       <p class="card-p">Mount Everest, the highest point on Earth, needs no introduction.
@@ -83,7 +83,7 @@
         conquer the world's tallest peak. As the ultimate mountaineering achievement, Everest's grandeur and 
         awe-inspiring presence continue to inspire adventurers from across the globe.</p>
   </div>
-  <div id="card3" class="card">
+  <div onclick ="expand(this)" id="card3" class="card">
       <h3 class="card-title">K2</h3>
       <img id="img3"src="img/3.jpg" class= "card-img" alt="">
       <p class="card-p">Known as the "Savage Mountain," K2 is renowned for its treacherous
@@ -91,7 +91,7 @@
           determination and expertise. As the second-highest peak on the planet, K2
         is an emblem of the relentless pursuit of conquering nature's most extreme challenges.</p>
   </div>
-  <div id = "card1" class="card">
+  <div onclick ="expand(this)" id = "card1" class="card">
     <h3 class="card-title">Matterhorn</h3>
     <img id="img1"src="img/1.jpg" class= "card-img" alt="">
     <p class="card-p">Standing as a symbol of the Swiss Alps, the Matterhorn
@@ -100,7 +100,7 @@
       ascent make it a legendary destination for climbers seeking both beauty and a formidable challenge.</p>
 </div>
 
-<div id = "card2" class="card">
+<div onclick ="expand(this)" id = "card2" class="card">
     <h3 class="card-title">Everest</h3>
     <img id="img2"src="img/2.jpg" class= "card-img" alt="">
     <p class="card-p">Mount Everest, the highest point on Earth, needs no introduction.
@@ -108,7 +108,7 @@
       conquer the world's tallest peak. As the ultimate mountaineering achievement, Everest's grandeur and 
       awe-inspiring presence continue to inspire adventurers from across the globe.</p>
 </div>
-<div id="card3" class="card">
+<div onmouseover="close1(this)" onclick ="expand(this)" id="card3" class="card">
     <h3 class="card-title">K2</h3>
     <img id="img3"src="img/3.jpg" class= "card-img" alt="">
     <p class="card-p">Known as the "Savage Mountain," K2 is renowned for its treacherous
@@ -195,6 +195,26 @@ for (var i = 0; i < elements.length; i++) {
   elements[i].innerHTML = "Mr. Whalen, our HTML and CSS instructor, has an unmistakable passion for web design. He starts each class with a genuine enthusiasm, eager to share the latest trends in responsive design and user experience. His desk is a testament to his craft, adorned with stacks of well-worn web development books and sticky notes filled with CSS shorthand tips. Mr. Whalen's knack for simplifying complex concepts allows us to grasp HTML and CSS with ease, turning what could be a dry subject into an engaging journey of creativity. He often peppers his lectures with real-world examples of stunning websites, igniting our inspiration to create our own masterpieces.";
 }
 
+}
+
+var old_el = ""
+function expand(el){
+  if(old_el != ""){
+    old_el.classList.remove("large")
+  }
+  old_el = el;
+  el.classList.add("large")
+}
+
+function close1(el){
+  if(old_el != el){
+    old_el.classList.remove("large")
+  } 
+  console.log("el")
+}
+
+function print(){
+  alert("test")
 }
 </script>
 </body>
